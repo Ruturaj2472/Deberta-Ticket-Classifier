@@ -50,29 +50,6 @@ customer-support-ticket-tagger/
 └── customer-support-ticket-tagger.ipynb
 ```
 
-## Setup
-
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/<your-username>/customer-support-ticket-tagger.git
-   cd customer-support-ticket-tagger
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Obtain the dataset (`customer_tickets.csv`) and update the file path in the notebook to point to your local copy:
-   ```python
-   df = pd.read_csv("path/to/your/customer_tickets.csv")
-   ```
-   Expected format: a CSV with two columns — ticket text and category label.
-
-4. A GPU is strongly recommended for training — fine-tuning a transformer on CPU alone will be significantly slower.
-
-5. Run the notebook cells from top to bottom.
-
 ## How It Works
 
 ### 1. Label Encoding
